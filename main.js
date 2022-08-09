@@ -1,4 +1,4 @@
-export default class {
+class {
   sayHello() {
     console.log("hi!");
   }
