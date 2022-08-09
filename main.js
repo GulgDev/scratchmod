@@ -1,4 +1,4 @@
-class ScratchMod {
+default export class {
   sayHello() {
     console.log("hi!");
   }
