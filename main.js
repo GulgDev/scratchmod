@@ -1,5 +1,12 @@
 (class {
-  sayHello() {
-    console.log("hi!");
+  static get staticInfo() {
+    return {
+      name: "MyMod"
+    };
+  }
+
+  get info() {
+    return {
+    };
   }
 })
