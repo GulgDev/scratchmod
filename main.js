@@ -5,7 +5,11 @@
     };
   }
   
-  main() {
-    console.log(x);
+  constructor(Scratch) {
+    this.Scratch = Scratch;
+  }
+  
+  init() {
+    this.Scratch.AddBlock();
   }
 })
