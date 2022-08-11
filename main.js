@@ -10,6 +10,8 @@
   }
   
   init() {
-    this.Scratch.AddBlock();
+    this.Scratch.addBlock("sayHi", () => {
+      alert("hi!");
+    });
   }
 })
