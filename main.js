@@ -6,7 +6,7 @@
   }
   
   init() {
-    this.scratch.addBlock("sayHi", () => {
+    this.scratch.addCommandBlock("sayHi", () => {
       alert("hi!");
     });
   }
