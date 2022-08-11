@@ -5,12 +5,12 @@
     };
   }
   
-  constructor(Scratch) {
-    this.Scratch = Scratch;
+  constructor(scratch) {
+    this.scratch = scratch;
   }
   
   init() {
-    this.Scratch.addBlock("sayHi", () => {
+    this.scratch.addBlock("sayHi", () => {
       alert("hi!");
     });
   }
