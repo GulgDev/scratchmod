@@ -1,12 +1,12 @@
 (class {
   static get info() {
     return {
-      name: "MyMod"
+      name: "My mod"
     };
   }
   
   init() {
-    this.scratch.addCommandBlock("say_hi", () => {
+    this.scratch.addCommandBlock("sayHi", () => {
       alert("hi!");
     });
   }
