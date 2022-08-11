@@ -1,12 +1,7 @@
 (class {
-  static get staticInfo() {
+  static get info() {
     return {
       name: "MyMod"
-    };
-  }
-
-  get info() {
-    return {
     };
   }
 })
