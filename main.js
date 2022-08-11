@@ -4,4 +4,8 @@
       name: "MyMod"
     };
   }
+  
+  load() {
+    console.log(x);
+  }
 })
