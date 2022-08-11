@@ -5,7 +5,7 @@
     };
   }
   
-  load() {
+  main() {
     console.log(x);
   }
 })
