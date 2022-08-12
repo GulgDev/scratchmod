@@ -1,6 +1,5 @@
 (class {
-  static get info() {
-    return {
+  static info = {
       name: "title",
       messages: {
         "en": {
