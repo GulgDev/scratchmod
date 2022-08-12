@@ -1,16 +1,15 @@
 (class {
   static get info() {
     return {
-      name: "My mod"
-    };
-  }
-  
-  constructor() {
-    this.scratch.localization.messages = {
-      "en": {
-        "blocks.alert": "alert %1"
-      },
-      "ru": {
+      name: "title",
+      messages: {
+        "en": {
+          "title": "My mod",
+          "blocks.alert": "alert %1"
+        },
+        "ru": {
+          "title": "Мой мод",
+        }
       }
     };
   }
