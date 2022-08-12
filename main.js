@@ -5,8 +5,18 @@
     };
   }
   
+  constructor() {
+    this.scratch.localization.messages = {
+      "en": {
+        "blocks.alert": "alert %1"
+      },
+      "ru": {
+      }
+    };
+  }
+  
   init() {
-    this.scratch.addCommandBlock("alert [string]", (message) => {
+    this.scratch.addCommandBlock(this.scratch.localization.getMessage("blocks.alert", "[string]"), (message) => {
       alert(message);
     });
   }
