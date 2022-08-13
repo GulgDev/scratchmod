@@ -4,11 +4,11 @@
     messages: {
       "en": {
         "title": "My mod",
-        "blocks.alert": "alert %1"
+        "blocks.alert": "alert [string]"
       },
       "ru": {
         "title": "Мой мод",
-        "blocks.alert": "предупредить %1"
+        "blocks.alert": "предупредить [string]"
       }
     }
   };
