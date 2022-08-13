@@ -14,7 +14,7 @@
   
   init() {
     this.scratch.addCommandBlock(this.scratch.localization.getMessage("blocks.alert", "[string]"), (message) => {
-      alert(message);
+      this.scratch.gui.alert(this.scratch.localization.getMessage("title"), message);
     });
   }
 })
