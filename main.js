@@ -14,11 +14,8 @@
   };
   
   init() {
-    const {addCommandBlock} = this.scratch;
-    const {getMessage} = this.scratch.localization;
-    const {alert} = this.scratch.gui;
-    addCommandBlock(getMessage("blocks.alert", "[string]"), (message) => {
-      alert(getMessage("title"), message);
+    this.scratch.addCommandBlock(this.scratch.localization.getMessage("blocks.alert", "[string]"), (message) => {
+      this.scratch.gui.alert(this.scratch.localization.getMessage("title"), message);
     });
   }
 })
