@@ -1,6 +1,7 @@
 (class {
   static info = {
     name: "title",
+    id: "mymod",
     messages: {
       "en": {
         "title": "My mod",
