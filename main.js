@@ -11,7 +11,8 @@
         "title": "Мой мод",
         "blocks.alert": "предупредить [string: \"Предупреждение!\"]"
       }
-    }
+    },
+    "permissions": []
   };
   
   init() {
