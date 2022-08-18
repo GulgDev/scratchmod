@@ -1,4 +1,4 @@
-(class {
+export default class MyMod {
   static info = {
     name: "title",
     id: "mymod",
@@ -19,4 +19,4 @@
       this.scratch.gui.alert(this.name, message);
     });
   }
-})
+}
