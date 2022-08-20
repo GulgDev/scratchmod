@@ -24,7 +24,7 @@ export default class MyMod {
   
   tick() {
     for (let sprite of this.scratch.sprites) {
-      sprite.move(...this.scratch.math.rotateXY(0, this.gravityPower, this.gravityDirection));
+      sprite.move(...this.scratch.math.rotateXY(0, this.gravityPower * 5, this.gravityDirection));
     }
     return true;
   }
