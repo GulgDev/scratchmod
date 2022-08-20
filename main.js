@@ -27,6 +27,7 @@ export default class MyMod {
   }
   
   tick() {
-    console.log("!!!")
+    console.log("!!!");
+    return true;
   }
 }
