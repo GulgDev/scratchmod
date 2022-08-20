@@ -23,7 +23,9 @@ export default class MyMod {
   }
   
   tick() {
-    this.scratch.sprites;
+    for (let sprite of this.scratch.sprites) {
+      sprite.move(0, 1);
+    }
     return false;
   }
 }
