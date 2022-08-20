@@ -27,7 +27,7 @@ export default class MyMod {
   }
   
   tick() {
-    console.log("!!!");
+    this.scratch.sprites;
     return false;
   }
 }
