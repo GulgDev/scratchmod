@@ -5,16 +5,16 @@ export default class MyMod {
     messages: {
       "en": {
         "title": "NewtonPE",
-        "blocks.setgravity": "set gravity direction [angle: 0] power [number: 1]"
+        "blocks.setgravity": "set gravity direction [angle: 180] power [number: 1]"
       },
       "ru": {
-        "blocks.setgravity": "задать направление гравитации [angle: 0] мощность [number: 1]"
+        "blocks.setgravity": "задать направление гравитации [angle: 180] мощность [number: 1]"
       }
     }
   };
   
   init() {
-    this.gravityDirection = 0;
+    this.gravityDirection = 180;
     this.gravityPower = 1;
     this.scratch.addCommandBlock("setgravity", (direction, power) => {
       this.gravityDirection = direction;
