@@ -16,15 +16,28 @@ export default class MyMod {
   init() {
     this.gravityDirection = 180;
     this.gravityPower = 1;
+    this.spritePosMap = {};
     this.scratch.addCommandBlock("setgravity", (direction, power) => {
       this.gravityDirection = direction;
       this.gravityPower = power;
     });
   }
   
+  onProjectStart() {
+    for (let sprite of this.scratch.sprites) {
+      this.spritePosMap[sprite] = sprite.x, sprite.y;
+    }
+  }
+  
+  onProjectStop() {
+    for (let sprite in this.spritePosMap) {
+      sprite.moveto(this.spritePosMap[sprite]);
+    }
+  }
+  
   tick() {
     for (let sprite of this.scratch.sprites) {
-      sprite.move(0, 1);
+      sprite.move(...this.scratch.math.rotateXY(0, this.gravityPower, this.gravityDirection));
     }
     return true;
   }
