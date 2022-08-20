@@ -4,19 +4,22 @@ export default class MyMod {
     id: "mymod",
     messages: {
       "en": {
-        "title": "My mod",
-        "blocks.alert": "alert [string: \"Alert!\"]"
+        "title": "ScratchNewton physics engine",
+        "blocks.setgravity": "set gravity direction [number: 0] power [number: 1]"
       },
       "ru": {
-        "title": "Мой мод",
-        "blocks.alert": "предупредить [string: \"Предупреждение!\"]"
+        "title": "Физический движок ScratchNewton",
+        "blocks.setgravity": "задать направление гравитации [number: 0] можщность [number: 1]"
       }
     }
   };
   
   init() {
-    this.scratch.addCommandBlock("alert", (message) => {
-      this.scratch.gui.alert(this.name, message);
+    this.gravityDirection = 0;
+    this.gravityPower = 1;
+    this.scratch.addCommandBlock("setgravity", (direction, power) => {
+      this.gravityDirection = direction;
+      this.gravityPower = power;
     });
   }
   
