@@ -8,7 +8,7 @@ export default class MyMod {
         "blocks.setgravity": "set gravity direction [number: 0] power [number: 1]"
       },
       "ru": {
-        "blocks.setgravity": "задать направление гравитации [number: 0] можщность [number: 1]"
+        "blocks.setgravity": "задать направление гравитации [number: 0] мощность [number: 1]"
       }
     }
   };
