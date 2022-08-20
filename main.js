@@ -19,4 +19,8 @@ export default class MyMod {
       this.scratch.gui.alert(this.name, message);
     });
   }
+  
+  onProjectStart() {
+    this.scratch.gui.alert(this.name, "Project started!");
+  }
 }
