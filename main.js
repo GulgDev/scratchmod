@@ -28,6 +28,6 @@ export default class MyMod {
   
   tick() {
     console.log("!!!");
-    return true;
+    return false;
   }
 }
