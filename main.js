@@ -25,4 +25,8 @@ export default class MyMod {
   onProjectStarted() {
     this.scratch.gui.alert(this.name, "Project started!");
   }
+  
+  tick() {
+    console.log("!!!")
+  }
 }
