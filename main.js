@@ -4,11 +4,10 @@ export default class MyMod {
     id: "mymod",
     messages: {
       "en": {
-        "title": "ScratchNewton physics engine",
+        "title": "ScratchNewton",
         "blocks.setgravity": "set gravity direction [number: 0] power [number: 1]"
       },
       "ru": {
-        "title": "Физический движок ScratchNewton",
         "blocks.setgravity": "задать направление гравитации [number: 0] можщность [number: 1]"
       }
     }
