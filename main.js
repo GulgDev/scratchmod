@@ -4,7 +4,7 @@ export default class MyMod {
     id: "mymod",
     messages: {
       "en": {
-        "title": "ScratchNewton",
+        "title": "NewtonPE",
         "blocks.setgravity": "set gravity direction [number: 0] power [number: 1]"
       },
       "ru": {
