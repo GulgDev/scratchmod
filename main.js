@@ -22,10 +22,6 @@ export default class MyMod {
     });
   }
   
-  onProjectStarted() {
-    this.scratch.gui.alert(this.name, "Project started!");
-  }
-  
   tick() {
     this.scratch.sprites;
     return false;
