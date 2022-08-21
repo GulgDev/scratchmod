@@ -28,6 +28,10 @@ export default class MyMod {
     for (let sprite of this.scratch.sprites) {
       setTimeout((() => {
         sprite.move(sprite.velocityX, sprite.velocityY);
+        if (sprite.touchingSprites.length > 0) {
+          sprite.velocityX *= -1;
+          sprite.velocityY *= -1;
+        }
         let gravityVelocity = this.scratch.math.rotateXY(0, this.gravityPower * 10, this.gravityDirection);
         sprite.velocityX += gravityVelocity[0];
         sprite.velocityY += gravityVelocity[1];
