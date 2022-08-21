@@ -16,6 +16,8 @@ export default class MyMod {
   init() {
     this.gravityDirection = 180;
     this.gravityPower = 1;
+    this.scratch.addField("velocityX", "number");
+    this.scratch.addField("velocityY", "number");
     this.scratch.addCommandBlock("setgravity", (direction, power) => {
       this.gravityDirection = direction;
       this.gravityPower = power;
@@ -24,7 +26,12 @@ export default class MyMod {
   
   tick() {
     for (let sprite of this.scratch.sprites) {
-      sprite.move(...this.scratch.math.rotateXY(0, this.gravityPower * 10, this.gravityDirection));
+      setTimeout((() => {
+        sprite.move(sprite.velocityX, sprite.velocityY);
+        let gravityVelocity = this.scratch.math.rotateXY(0, this.gravityPower * 10, this.gravityDirection);
+        sprite.velocityX += gravityVelocity[0];
+        sprite.velocityY += gravityVelocity[1];
+      }).bind(this), 0);
     }
     return true;
   }
